@@ -1,0 +1,5 @@
+make
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/
+./ArucoDetect
+
+Reference: https://youtu.be/FCzMpHWUUKg?si=laKAlCel3MKvJdbU
