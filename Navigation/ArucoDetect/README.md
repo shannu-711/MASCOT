@@ -12,12 +12,20 @@ The main C++ source code for detecting ArUco markers is located in `ArucoDetect.
       6. **`ReferenceID, TargetID, ChaserID`**: ArUCo marker IDs of inertial, target and chaser markers.
       7. 
 
-    #### Outputs:
-      1. **`finalCoordinates`**: The final (x,y) coordinates of both spacecraft relative to inertial marker.
-      2. **`finalZAngle`**: The final yaw angle of both spacecraft relative to inertial marker.
+    #### Outputs yaw angle of both spacecraft relative to inertial marker.
 
 2. `Instructions to run opencv in vscode.txt` contains instructions for configuring OpenCV to run in VSCode.
-3. `angle.txt` is created during runtime by `ArucoDetect.cpp` to store the yaw angle of spacecraft relative to the inertial marker. If both spacecraft are in arena, the odd-numbered lines of the file correspond to the data of spacecraft with ID 1, while even-numbered lines correspond to the data of spacecraft with ID 7. 
+3. `angle.txt` is created during runtime by `Aru:
+      1. **`finalCoordinates`**: The final (x,y) coordinates of both spacecraft relative to inertial marker.
+      2. **`finalZAngle`**: The finalcoDetect.cpp` to store the yaw angle of spacecraft relative to the inertial marker. If both spacecraft are in arena, the odd-numbered lines of the file correspond to the data of spacecraft with ID 1, while even-numbered lines correspond to the data of spacecraft with ID 7. 
 4. `coordinates.txt` is created during runtime by `ArucoDetect.cpp` to store the position of spacecraft relative to the inertial marker. If both spacecraft are in arena, the odd-numbered lines of the file correspond to the (x,y) coordinates of spacecraft with ID 1, while even-numbered lines correspond to the data of spacecraft with ID 7.
 5. `createMarkers.cpp` contains the C++ source code to generate ArUCO marker of a specified size and ID from the **DICT_6X6_50** dictionary and save the image in the directory.
+    #### Inputs:
+      1. **`dictionary`**: ArUCo marker dictionary from which to generate the marker.
+      2. **`markersize`**: Desired size of the marker in pixels.
+      3. **`ID`**: ID of the ArUCo marker to generate.
+
+    #### Outputs:
+      1. **`markerImage`**: Generated image of the ArUCo marker.
+
 6. `plot_Coordinates.m` reads `angle.txt` and `coordinates.txt` files and plots the position and angle data for each spacecraft in **MATLAB**.
