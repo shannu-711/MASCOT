@@ -9,6 +9,8 @@ The main C++ source code for detecting ArUco markers is located in `ArucoDetect.
       3. **`distCoeffs1`**: Distortion coefficients of camera 1.
       4. **`distCoeffs2`**: Distortion coefficients of camera 2.
       5. **`markerLength`**: Length of ArUCo marker in same units as the size of square in checkerboard mentioned during camera calibration.
+      6. **`ReferenceID, TargetID, ChaserID`**: ArUCo marker IDs of inertial, target and chaser markers.
+      7. 
 
     #### Outputs:
       1. **`finalCoordinates`**: The final (x,y) coordinates of both spacecraft relative to inertial marker.
