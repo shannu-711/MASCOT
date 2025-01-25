@@ -23,8 +23,8 @@ The main C++ source code for detecting ArUco markers is located in `ArucoDetect.
 5. `createMarkers.cpp` contains the C++ source code to generate ArUCO marker of a specified size and ID from the **DICT_6X6_50** dictionary and save the image in the directory.
     #### Inputs:
       1. **`dictionary`**: ArUCo marker dictionary from which to generate the marker.
-      2. **`markersize`**: Desired size of the marker in pixels.
-      3. **`ID`**: ID of the ArUCo marker to generate.
+      2. **`ID`**: ID of the ArUCo marker to generate.
+      3. **`markersize`**: Desired size of the marker in pixels.
 
     #### Outputs:
       1. **`markerImage`**: Generated image of the ArUCo marker.
