@@ -10,9 +10,10 @@ The main C++ source code for detecting ArUco markers is located in `ArucoDetect.
       4. **`distCoeffs2`**: Distortion coefficients of camera 2.
       5. **`markerLength`**: Length of ArUCo marker in same units as the size of square in checkerboard mentioned during camera calibration.
       6. **`ReferenceID, TargetID, ChaserID`**: ArUCo marker IDs of inertial, target and chaser markers.
-      7. 
 
-    #### Outputs yaw angle of both spacecraft relative to inertial marker.
+    #### Outputs:
+      1. **`finalCoordinates`**: The final (x,y) coordinates of both spacecraft relative to inertial marker.
+      2. **`finalZAngle`**: The final yaw angle of both spacecraft relative to inertial marker.
 
 2. `Instructions to run opencv in vscode.txt` contains instructions for configuring OpenCV to run in VSCode.
 3. `angle.txt` is created during runtime by `Aru:
